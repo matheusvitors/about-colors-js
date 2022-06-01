@@ -1,5 +1,5 @@
 
-export const hexToRGBA = (hex, alpha) => {
+const hexToRGBA = (hex, alpha) => {
     let c;
 
     if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
@@ -17,5 +17,7 @@ export const hexToRGBA = (hex, alpha) => {
 
     throw new Error('Bad Hex');
 }
+
+export { hexToRGBA };
 
 
